@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finance_tracker
+    username: postgres
+    password: 1qaz!QAZ
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  jackson:
+    time-zone: UTC
+server:
+  port: 8080
